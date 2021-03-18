@@ -1,0 +1,1 @@
+vlc --adaptive-logic=rate --random --loop http://192.168.50.50/top10youtube/liveYoutube-mp4.mpd
