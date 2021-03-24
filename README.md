@@ -18,7 +18,8 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
 ``` git clone https://github.com/leandrocalmeida/PoCSBRC2021.git```
 
 3. Iniciar a infraestrutura com o vagrant
-``` cd PoCSBRC2021 
+``` 
+    cd PoCSBRC2021 
     vagrant up
 ```
 
