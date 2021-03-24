@@ -6,9 +6,15 @@ Repositório público contendo a infraestrutura utilizada na Prova de Conceito (
 Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Cc-by-nc_icon.svg/88px-Cc-by-nc_icon.svg.png)
 
 ## Requisitos: 
-- Virtualbox
-- Vagrant
-- Ansible
+- Hardware
+    - 200 GB de espaço em disco
+    - 32 GB de memória RAM
+    - Processadores intel Xeon E5-2630 2.60GHz (ou similar)
+- Software
+    - Sistema operacional linux 
+    - Virtualbox
+    - Vagrant
+    - Ansible
 
 ## Topologia:
 ![alt text](https://raw.githubusercontent.com/leandrocalmeida/PoCSBRC2021/main/pictures/Cenario.jpeg)
@@ -22,6 +28,4 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
     cd PoCSBRC2021 
     vagrant up
 ```
-
-5. 
 
