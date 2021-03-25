@@ -48,21 +48,18 @@ sudo ./send_int.py 192.168.50.52
 cd /vagrant/host-setup/clientVlc/
 ./client.sh
 ```
-8. Iniciar a carga no loadGen1
+8. Iniciar a carga no loadGen1 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
-vagrant ssh loadGen1
 cd /vagrant/code/loadGen/loadGen1/
 ./mix_periodic_dash1.sh
 ```
-9. Iniciar a carga no loadGen2
+9. Iniciar a carga no loadGen2 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
-vagrant ssh loadGen2
 cd /vagrant/code/loadGen/loadGen2/
 ./mix_periodic_dash2.sh
 ```
-10. Iniciar a carga no loadGen3
+10. Iniciar a carga no loadGen3 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
-vagrant ssh loadGen3
 cd /vagrant/code/loadGen/loadGen3/
 ./mix_periodic_dash3.sh
 ```
