@@ -74,4 +74,4 @@ O arquivo é o ```log_INT.txt```
 ```
 cd /home/p4/logs/
 ```
-O arquivo possui formato com o nome dash_exp_"DATE".log
+O arquivo possui formato com o nome ```dash_exp_"DATE".log```
