@@ -11,7 +11,7 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
     - 32 GB de memória RAM
     - Processadores intel Xeon E5-2630 2.60GHz (ou similar)
 - Software
-    - Sistema operacional linux 
+    - Sistema operacional Linux (testado no ubuntu) ou OSX.
     - Virtualbox
     - Vagrant
     - Ansible
@@ -21,11 +21,19 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
 
 ## Passos para executar a PoC
 1. Clonar o repositório git
-``` git clone https://github.com/leandrocalmeida/PoCSBRC2021.git```
 
-3. Iniciar a infraestrutura com o vagrant
 ``` 
+git clone https://github.com/leandrocalmeida/PoCSBRC2021.git
+```
+
+2. Iniciar a infraestrutura com o vagrant
+```
     cd PoCSBRC2021 
     vagrant up
 ```
-
+3. Iniciar as coletas INT no sinkServer
+```
+vagrant ssh sinkServer
+cd /vagrant/code/
+sudo ./receive_int.py
+```
