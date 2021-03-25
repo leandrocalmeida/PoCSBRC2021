@@ -28,8 +28,8 @@ git clone https://github.com/leandrocalmeida/PoCSBRC2021.git
 
 2. Iniciar a infraestrutura com o vagrant
 ```
-    cd PoCSBRC2021 
-    vagrant up
+cd PoCSBRC2021 
+vagrant up
 ```
 3. Iniciar as coletas INT no sinkServer
 ```
@@ -37,3 +37,11 @@ vagrant ssh sinkServer
 cd /vagrant/code/
 sudo ./receive_int.py
 ```
+4. Iniciar o envio de pacotes INT no dashServer
+```
+vagrant ssh dashServer
+cd /vagrant/code/
+sudo ./send_int.py 192.168.50.52
+```
+6. Iniciar o clientVlc
+7. Iniciar a carga nos geradores de carga
