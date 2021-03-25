@@ -64,5 +64,10 @@ cd /vagrant/code/loadGen/loadGen3/
 ./mix_periodic_dash3.sh
 ```
 ## Passos para construir o dataset
-1. Coletar as métricas INT (X) no sinkServer
+1. Métricas INT (X) no sinkServer
+```
+cd /vagrant/code/logs/
+```
+O arquivo é o ```log_INT.txt```
+
 2. Coletar as métricas de QoS (Y) no clientVlc
