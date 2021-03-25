@@ -63,3 +63,6 @@ cd /vagrant/code/loadGen/loadGen2/
 cd /vagrant/code/loadGen/loadGen3/
 ./mix_periodic_dash3.sh
 ```
+## Passos para construir o dataset
+1. Coletar as métricas INT (X) no sinkServer
+2. Coletar as métricas de QoS (Y) no clientVlc
