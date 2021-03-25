@@ -28,7 +28,7 @@ git clone https://github.com/leandrocalmeida/PoCSBRC2021.git
 
 2. Iniciar a infraestrutura com o vagrant
 ```
-cd PoCSBRC2021 
+cd PoCSBRC2021/ 
 vagrant up
 ```
 3. Iniciar as coletas INT no sinkServer
@@ -43,5 +43,26 @@ vagrant ssh dashServer
 cd /vagrant/code/
 sudo ./send_int.py 192.168.50.52
 ```
-6. Iniciar o clientVlc
-7. Iniciar a carga nos geradores de carga
+6. Iniciar o VLC no clientVlc (Obs: utilizar a interface gráfica via protocolo RDP)
+```
+cd /vagrant/host-setup/clientVlc/
+./client.sh
+```
+8. Iniciar a carga no loadGen1
+```
+vagrant ssh loadGen1
+cd /vagrant/code/loadGen/loadGen1/
+./mix_periodic_dash1.sh
+```
+9. Iniciar a carga no loadGen2
+```
+vagrant ssh loadGen2
+cd /vagrant/code/loadGen/loadGen2/
+./mix_periodic_dash2.sh
+```
+10. Iniciar a carga no loadGen3
+```
+vagrant ssh loadGen3
+cd /vagrant/code/loadGen/loadGen3/
+./mix_periodic_dash3.sh
+```
