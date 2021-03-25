@@ -71,3 +71,7 @@ cd /vagrant/code/logs/
 O arquivo é o ```log_INT.txt```
 
 2. Coletar as métricas de QoS (Y) no clientVlc
+```
+cd /home/p4/logs/
+```
+O arquivo possui formato com o nome dash_exp_"DATE".log
