@@ -26,43 +26,56 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
 git clone https://github.com/leandrocalmeida/PoCSBRC2021.git
 ```
 
-2. Iniciar a infraestrutura com o vagrant
+2.Baixar os vídeos no formato MPEG-DASH
 ```
-cd PoCSBRC2021/ 
+cd cd PoCSBRC2021/videos/
+./getVideos.sh
+```
+
+3. Iniciar a infraestrutura com o vagrant
+```
+cd ../ 
 vagrant up
 ```
-3. Iniciar as coletas INT no sinkServer
+
+4. Iniciar as coletas INT no sinkServer
 ```
 vagrant ssh sinkServer
 cd /vagrant/code/
 sudo ./receive_int.py
 ```
-4. Iniciar o envio de pacotes INT no dashServer
+
+5. Iniciar o envio de pacotes INT no dashServer
 ```
 vagrant ssh dashServer
 cd /vagrant/code/
 sudo ./send_int.py 192.168.50.52
 ```
+
 6. Iniciar o VLC no clientVlc (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
 cd /vagrant/host-setup/clientVlc/
 ./client.sh
 ```
-8. Iniciar a carga no loadGen1 (Obs: utilizar a interface gráfica via protocolo RDP)
+
+7. Iniciar a carga no loadGen1 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
 cd /vagrant/code/loadGen/loadGen1/
 ./mix_periodic_dash1.sh
 ```
-9. Iniciar a carga no loadGen2 (Obs: utilizar a interface gráfica via protocolo RDP)
+
+8. Iniciar a carga no loadGen2 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
 cd /vagrant/code/loadGen/loadGen2/
 ./mix_periodic_dash2.sh
 ```
-10. Iniciar a carga no loadGen3 (Obs: utilizar a interface gráfica via protocolo RDP)
+
+9. Iniciar a carga no loadGen3 (Obs: utilizar a interface gráfica via protocolo RDP)
 ```
 cd /vagrant/code/loadGen/loadGen3/
 ./mix_periodic_dash3.sh
 ```
+
 ## Passos para construir o dataset
 1. Métricas INT (X) no sinkServer
 ```
