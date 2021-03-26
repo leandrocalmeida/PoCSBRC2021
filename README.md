@@ -26,9 +26,9 @@ Creative Commons ![alt text](https://upload.wikimedia.org/wikipedia/commons/thum
 git clone https://github.com/leandrocalmeida/PoCSBRC2021.git
 ```
 
-2.Baixar os vídeos no formato MPEG-DASH
+2. Baixar os vídeos no formato MPEG-DASH
 ```
-cd cd PoCSBRC2021/videos/
+cd PoCSBRC2021/videos/
 ./getVideos.sh
 ```
 
